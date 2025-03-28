@@ -1,4 +1,3 @@
-
 const screen = {
     userProfile: document.querySelector('.profile-data'),
     renderUser(user) {
@@ -19,6 +18,9 @@ const screen = {
                 <ul>${repositoriesItems}</ul>
             </div>`;
         }
+    },
+    renderNotFound(){
+        this.userProfile.innerHTML = "<h3> Usuário nao encontrado </h3>"
     }
 };
 
